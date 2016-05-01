@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="style/style.css" rel="stylesheet" type="text/css" />
+<style>
+</style>
+</head>
+
+<body>
+	
+    <dl>
+    	<dt>标准盒子</dt>
+        <dd>
+        	<div class="xiehe">
+    			<div class="xiezi"></div>
+    		</div>
+        </dd>
+        <dd>
+        	<p>.xiehe{
+                width:100px;
+                height:100px;
+                margin:100px;
+                padding:10px;
+                border:5px solid #F00;
+                background:#F93;
+            }</p>
+            <p>.xiezi{
+                width:100px;
+                height:100px;
+                background:#09F;	
+            }</p>
+        </dd>
+        
+        <dt>怪异盒子</dt>
+        <dd>
+        	<div class="xiehe1">
+    			<div class="xiezi1"></div>
+    		</div>
+        </dd>
+        <dd>
+        	<p>.xiehe1{
+                width:130px;
+                height:130px;
+                margin:100px;
+                padding:10px;
+                border:5px solid #F00;
+                background:#F93;
+                box-sizing:border-box;
+            }</p>
+            <p>.xiezi1{
+                width:100px;
+                height:100px;
+                background:#09F;	
+            }</p>
+        </dd>
+        
+        <dt>弹性盒子水平分栏</dt>
+        <dd>
+        	<div class="flex-h">
+				<div>1</div>
+				<div>1</div>
+                <div>2</div>
+                <div>4</div>
+			</div>
+        </dd>
+        <dt>弹性盒子垂直分栏</dt>
+        <dd>
+        	<div class="flex-v">
+				<div>1</div>
+				<div>1</div>
+                <div>2</div>
+                <div>4</div>
+			</div>
+        </dd>
+        <dt>弹性盒子排序(flex)</dt>
+        <dd>
+        	<div class="flex-v orderbox">
+				<div>a</div>
+				<div>b</div>
+                <div>c</div>
+                <div>d</div>
+			</div>
+        </dd>
+        <dt>cloumn分栏</dt>
+        <dd>
+        	<div class="test3">
+                <p>This module describes multi-column layout in CSS. By using functionality described in this document, style sheets can declare that the content of an element is to be laid out in multiple columns. </p>
+                <p>On the Web, tables have also been used to describe multi-column layouts. The main benefit of using CSS-based columns is flexibility; content can flow from one column to another, and the number of columns can vary depending on the size of the viewport. Removing presentation table markup from documents allows them to more easily be presented on various output devices including speech synthesizers and small mobile devices.</p>
+            </div>
+        </dd>
+        <dt>旧版弹性盒子居中</dt>
+        <dd>
+        	<div class="flex-box">
+                <div class="flex-child"><img src="images/panda_128px_1082116_easyicon.net.png" /></div>
+			</div>
+        </dd>
+    </dl>
+</body>
+</html>

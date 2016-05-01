@@ -1,0 +1,125 @@
+dl{ margin:0 auto; width:60%;}
+
+/*标准盒子*/
+.xiehe{
+	width:100px;
+	height:100px;
+	margin:50px;
+	padding:10px;
+	border:5px solid #F00;
+	background:#F93;
+}
+.xiezi{
+	width:100px;
+	height:100px;
+	background:#09F;	
+}
+/*怪异盒子*/
+.xiehe1{
+	width:130px;
+	height:130px;
+	margin:50px;
+	padding:10px;
+	border:5px solid #F00;
+	background:#F93;
+	box-sizing:border-box;
+}
+.xiezi1{
+	width:100px;
+	height:100px;
+	background:#09F;	
+}
+/*弹性盒子水平分栏*/
+.flex-h{
+	display:-moz-box; /* Firefox */
+	display:-webkit-box; /* Safari and Chrome */
+	display:box;
+	width:300px;
+	border:1px solid black;
+	margin:50px;
+}
+.flex-h div{ height:100%;border:1px dashed #E13733;}
+.flex-h div:nth-of-type(1),.flex-h div:nth-of-type(2){
+	-moz-box-flex:1.0; /* Firefox */
+	-webkit-box-flex:1.0; /* Safari and Chrome */
+	box-flex:1.0;
+}
+.flex-h div:nth-of-type(3){
+	-moz-box-flex:2.0; /* Firefox */
+	-webkit-box-flex:2.0; /* Safari and Chrome */
+	box-flex:2.0;
+}
+.flex-h div:nth-of-type(4){	
+	-moz-box-flex:3.0; /* Firefox */
+	-webkit-box-flex:3.0; /* Safari and Chrome */
+	box-flex:3.0;
+}
+/*弹性盒子垂直分栏<*/
+.flex-v{
+	display:-moz-box; /* Firefox */
+	display:-webkit-box; /* Safari and Chrome */
+	display:box;
+	-webkit-box-orient:vertical;
+	box-orient:vertical;
+	-moz-box-orient:vertical;
+	height:200px;
+	width:300px;
+	border:1px solid black;
+	margin:50px;
+}
+.flex-v div{
+	width:300px;
+	border:1px dashed #E13733;
+}
+.flex-v div:nth-of-type(1),.flex-v div:nth-of-type(2){
+	-moz-box-flex:1.0; /* Firefox */
+	-webkit-box-flex:1.0; /* Safari and Chrome */
+	box-flex:1.0;
+}
+.flex-v div:nth-of-type(3){
+	-moz-box-flex:2.0; /* Firefox */
+	-webkit-box-flex:2.0; /* Safari and Chrome */
+	box-flex:2.0;
+}
+.flex-v div:nth-of-type(4){	
+	-moz-box-flex:4.0; /* Firefox */
+	-webkit-box-flex:4.0; /* Safari and Chrome */
+	box-flex:4.0;
+}
+/*排序*/
+.orderbox{
+	display:flex;
+}
+.orderbox div:nth-of-type(3){
+	order:-1;
+}
+
+/*分栏*/
+.test3{
+	column-count:5;
+	-moz-column-count:5;	
+	-webkit-column-count:5;	
+	-moz-column-rule-style:dotted;
+	-webkit-column-rule-style:dotted;
+	column-rule-style:dotted;
+}
+/*旧版弹性盒子居中*/
+.flex-box{
+	 display:-webkit-box;
+	 display:-moz-box;
+	 display:box;
+	 -webkit-box-pack:center;
+	 -moz-box-pack:center;
+	 box-pack:center;
+	 -webkit-box-align:center;
+	 -moz-box-align:center;
+	 box-align:center;
+	 width:200px;
+	 height:200px;
+	 background:#FC0;
+	 margin:50px;
+}
+.flex-child{
+	background:#FA504B;
+}
+
